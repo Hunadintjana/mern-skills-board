@@ -12,7 +12,7 @@
 - ✨ Create, update, and delete skill with title and description
 - 🛠️ Build and test a fully functional REST API
 - 🚀 Fully responsive user interface
-- 🌐 HTTP methods, status codes, and SQL vs NoSQL concepts
+- 🌐 HTTP methods, status codes
 - 📦 Free Deployment on render.com
 
 
