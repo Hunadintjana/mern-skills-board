@@ -13,11 +13,11 @@ const __dirname = path.resolve();
 
 //middleware
 app.use(express.json());
+
 app.use(
   cors({
-    origin:
-      process.env.NODE_ENV === "production"
-        ? true // allow Render domain
+    origin:  process.env.NODE_ENV === "production"
+      ? true // allow Render domain
         : "http://localhost:5173",
     credentials: true,
   })
@@ -42,8 +42,6 @@ if (process.env.NODE_ENV === "production") {
 
 connectDB().then(()=>{
 
-    app.listen(PORT, ()=>{
-        console.log("Server running at PORT:",PORT);
-    })
+  app.listen(PORT, ()=>{ console.log("Server running at PORT:",PORT); });
 
 });
